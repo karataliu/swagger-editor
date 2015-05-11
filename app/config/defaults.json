@@ -13,6 +13,8 @@
   "disableCodeGen": false,
   "examplesFolder": "/spec-files/",
   "exampleFiles": [
+    "simpleTrippin.yaml",
+    "simpleBook.yaml",
     "default.yaml",
     "heroku-pets.yaml",
     "minimal.yaml",

@@ -46,6 +46,12 @@
       </button>
       <ul class="dropdown-menu" role="menu" aria-labelledby="preferences">
         <li role="presentation">
+          <a role="menuitem" tabindex="-1" ng-click="toggleSimpleYAML()"
+            track-event="mode {{isSimpleYAMLEnabled()}}">
+            {{isSimpleYAMLEnabled() ? 'Disable' : 'Enable'}} Simple YAML
+          </a>
+        </li>
+        <li role="presentation">
           <a class="font-size">
             Font Size
             <span ng-click="adjustFontSize(1)" stop-event class="adjust" track-event="preferences font+">+</span><span ng-click="adjustFontSize(-1)" stop-event class="adjust" track-event="preferences font-">–</span>

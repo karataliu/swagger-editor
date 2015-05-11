@@ -14,7 +14,12 @@ SwaggerEditor.service('Preferences', function Preferences($localStorage) {
      * Update the preview pane per keypress if it's true, otherwise after value
      * change in the editor, a "Reload" button will show up in preview pane
     */
-    liveRender: true
+    liveRender: true,
+
+    /*
+     * Whether to enable the simple YAML format.
+    */
+    simpleYaml : true
   };
   var preferences = $localStorage.preferences || defaultPreferences;
 

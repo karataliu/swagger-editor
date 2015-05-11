@@ -137,6 +137,14 @@ SwaggerEditor.controller('HeaderCtrl', function HeaderCtrl($scope, $modal,
     return !!Preferences.get('liveRender');
   };
 
+  $scope.toggleSimpleYAML = function () {
+    Preferences.set('simpleYAML', !Preferences.get('simpleYAML'));
+  };
+
+  $scope.isSimpleYAMLEnabled = function () {
+    return !!Preferences.get('simpleYAML');
+  };
+
   /*
    * Should show editor related menu options?
   */
